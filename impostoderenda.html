@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaração do Imposto de Renda</title>
+</head>
+<body>
+    <h1>Imposto de Renda</h1>
+    <p>Nome: <span id="nome"></span></p>
+    <p>CPF: <span id="cpf"></span></p>
+    <p>Renda: <span id="renda"></span></p>
+    <p>Número de Dependentes: <span id="dependentes"></span></p>
+    <p>Valor Final: <span id="valortotal"></span></p>
+
+    <script>
+        let nome = prompt("Digite o nome do comtribuinte");
+        let cpf = Number(prompt("Digite seu CPF"));
+        let renda = Number(prompt("Digite o valor da sua renda anual"));
+        let dependentes = Number(prompt("Digite a quantidade de dependentes que você tem"));
+        let opcao = prompt("clique em CONTINUAR para declarar mais rendas ou FIM para encerrar as declarações");
+
+        valorrenda = renda - (desconto * dependentes)
+        
+        if(valorrenda >= 900){
+            valortotal + 0
+        }
+        if(valorrenda >= 5000){
+            valortotal = valorrenda + desconto
+        }
+
+        document.getElementById('nome').innerHTML += nome;
+        document.getElementById('cpf').innerHTML += cpf;
+        document.getElementById('renda').innerHTML += renda;
+        document.getElementById('dependentes').innerHTML += dependentes;
+        document.getElementById('valortotal').innerHTML += valortotal;
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados das Diciplinas de uma Escola</title>
+</head>
+<body>
+    <h1>Dados da Disciplina de uma Escola</h1>
+    <p>Nome do Aluno: <span id="nome"></span></p>
+    <p>Nome da Matéria: <span id="materia"></span></p>
+    <p>Descrição do Conteúdo: <span id="descricao"></span></p>
+    <p>Frequência do Aluno na Disciplina: <span id="frequencia"></span></p>
+    <p>Notas Mínimas para a Aprovação do aluno: <span id="notas"></span></p>
+
+    <script>
+        let nome = prompt("digite o nome do aluno");
+        let materia = prompt("digite o nome da matéria");
+        let conteudo = prompt("descreva o conteúdo da matéria escolhida");
+        let frequencia = prompt("digite a frequencia do aluno");
+        let notas = prompt("Digite a nota do aluno");
+
+        if(notas >= 5){
+            notas = "Aprovado"
+        }else{
+            notas = "Reprovado"
+        }
+
+        if(frequencia >= 75){
+            frequencia = "Aprovado"
+        }else{
+            frequencia = "Reprovado"
+        }
+
+        document.getElementById('nome').innerHTML += nome;
+        document.getElementById('materia').innerHTML += materia;
+        document.getElementById('descricao').innerHTML += descricao;
+        document.getElementById('frequencia').innerHTML += frequencia;
+        document.getElementById('notas').innerHTML += notas;
+        
+    </script>
+    
+</body>
+</html>

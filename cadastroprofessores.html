@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Professores</title>
+</head>
+<body>
+    <h1>Informações de professores</h1>
+    <p>Nome do Professor: <span id="nome"></span></p>
+    <p>Endereço: <span id="endereco"></span></p>
+    <p>Cidade: <span id="cidade"></span></p>
+    <p>Unidades Federativas(UF): <span id="uf"></span></p>
+    <p>CEP: <span id="cep"></span></p>
+    <p>Telefone: <span id="telefone"></span></p>
+    <p>CPF: <span id="cpf"></span></p>
+    <p>RG: <span id="rg"></span></p>
+    <p>Data de Nascimento: <span id="nascimento"></span></p>
+    <p>Nivel de Escolaridade: <span id="escolaridade"></span></p>
+    <p>Qual Curso em que se Formol: <span id="curso"></span></p>
+    
+    <script>
+        let nome;
+        let endereco;
+        let cidade;
+        let uf;
+        let cep;
+        let telefone;
+        let cpf;
+        let rg;
+        let nascimento;
+        let escolaridade;
+        let curso;
+
+        while (fim != ){
+            nome += prompt("Digite o nome do Professor.")
+            endereco += prompt("Digite o endereço do porfessor")  
+            cidade += prompt("Digite o nome da Cidade emque o professor reside.")
+            uf += prompt("Digite o UF (Unidade Federativa) do porfessor.")
+            cep += prompt("Digite o CEP do Professor.")
+            rg += prompt("Digite o RG do Professor.")
+            cpf += prompt("Digite o RG do Professor.")
+            nascimentro += prompt("Digite a data de nascimento do Professor.")
+            escolaridade += prompt("Digite o nivel de Escolaridade do Professor.")
+            curso += prompt("Digite o nome do Curso de Formação do Professor.")
+
+        }
+        
+       
+
+        document.getElementById('nome').innerHTML += nome;
+        document.getElementById('endereco').innerHTML += endereco;
+        document.getElementById('cidade').innerHTML += cidade;
+        document.getElementById('uf').innerHTML += uf;
+        document.getElementById('cep').innerHTML += cep;
+        document.getElementById('rg').innerHTML += rg;
+        document.getElementById('cpf').innerHTML += cpf;
+        document.getElementById('nascimento').innerHTML += nascimento;
+        document.getElementById('escolaridade').innerHTML += escolaridade;
+        document.getElementById('curso').innerHTML += curso;
+        
+
+    </script>
+
+
+
+</body>
+</html>
